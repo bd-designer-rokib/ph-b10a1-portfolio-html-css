@@ -8,5 +8,26 @@
 }
 
 :root {
-    
+    --shade-1: #0D1321;
+}
+
+/* Nav Section */
+.nav-section {
+    max-width: 1140px;
+    margin: 36px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-section h3 {
+    color: var(--shade-1);
+}
+
+.nav-section button {
+    color: var(--shade-1);
+    border: 1px solid var(--shade-1);
+    border-radius: 8px;
+    opacity: 0.8;
+    padding: 17px 24px;
 }
