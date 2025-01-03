@@ -9,6 +9,9 @@
 
 :root {
   --shade-1: #0d1321;
+  --shade-2: rgba(13, 19, 33, 0.02);
+  /* #0D132103 */
+  --shade-3: rgba(13, 19, 33, 0.7);
 }
 
 /* Nav Section */
@@ -86,4 +89,95 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+/* * why-dev-section */
+
+.why-dev-section {
+  max-width: 1140px;
+  margin: 80px auto;
+  border-radius: 16px;
+  background: var(--shade-2);
+  padding: 80px 97px;
+}
+
+.why-dev-section .why-dev-title {
+  color: var(--shade-1);
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.why-dev-section .why-dev-desc {
+  margin: 24px auto 48px;
+  max-width: 852px;
+  color: var(--shade-1);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+.why-dev-section .why-dev-box1,
+.why-dev-section .why-dev-box2 {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  padding: 48px;
+}
+.why-dev-section .why-dev-box1 {
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  justify-content: space-between;
+}
+
+.why-dev-section .why-dev-box2 {
+  background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  margin: 32px 0;
+  gap: 32px;
+}
+
+.why-dev-section .why-dev-box1 .why-dev-content .content-title,
+.why-dev-section .why-dev-box2 .why-dev-content .content-title {
+  color: var(--shade-3);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.why-dev-section .why-dev-box1 .why-dev-content .content-title {
+  max-width: 390px;
+}
+
+.why-dev-section .why-dev-box2 .why-dev-content .content-title {
+  max-width: 477px;
+}
+
+.why-dev-section .why-dev-box1 .why-dev-content .content-desc,
+.why-dev-section .why-dev-box2 .why-dev-content .content-desc {
+  max-width: 468px;
+  margin: 16px 0 32px;
+  color: var(--shade-1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+.why-dev-section .why-dev-box1 .why-dev-content .content-link,
+.why-dev-section .why-dev-box2 .why-dev-content .content-link {
+  text-decoration: none;
+}
+
+.why-dev-section .why-dev-box1 .why-dev-content .content-link button,
+.why-dev-section .why-dev-box2 .why-dev-content .content-link button {
+  padding: 12px 20px;
+  border: 1px solid var(--shade-1);
+  opacity: 0.7;
+  background-color: #fff;
 }
